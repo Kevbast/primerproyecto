@@ -1,0 +1,29 @@
+<div>
+    <h1>Tabla de multiplicar </h1>
+    <form #sumarForm="ngForm">
+        <label >Número </label>
+        <input type="number" name="cajanumero1" #cajanumero1> <br>
+        <button (click)="generarTabla()">
+            Mostrar suma
+        </button>
+    </form>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th >Operacion</th>
+                    <th >Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let number of numeros;let i=index">
+                    <td>{{cajaNumeroRef.nativeElement.value}} x {{i}}</td>
+                    <td>{{number}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+
+</div>
