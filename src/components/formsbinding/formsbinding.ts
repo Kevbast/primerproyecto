@@ -13,7 +13,7 @@ export class FormsBinding{
     constructor(){
         this.mensaje=""
         this.user={
-            nombre:"",
+            nombre:"jejej",
             apellidos:"",
             edad:0
         }
@@ -23,6 +23,7 @@ export class FormsBinding{
 
     recibidDatos():void{
         this.mensaje="DATOS RECIBIDOS"
+        console.log(this.user)
     }
 
 
