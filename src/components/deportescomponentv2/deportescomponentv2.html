@@ -1,0 +1,20 @@
+<div>
+    <h1 style="color: blueviolet;">@Directivas 2025</h1>
+    <ul>
+        @for (num of numbers; track num) {
+            @if(num%2==0){
+                <li class="par">{{num}}</li>
+            }@else {
+                <li >{{num}}</li>
+            }
+        }
+    </ul>
+
+    <ul>
+        @for(deporte of sports; track deporte;let i=$index){
+            <li>Index: {{i}} Deporte:{{deporte}}</li>
+        }@empty{
+            <li>SIN ELEMENTOS</li>
+        }
+    </ul>
+</div>
