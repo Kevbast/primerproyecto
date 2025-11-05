@@ -4,11 +4,11 @@
         <label >Número </label>
         <input type="number" name="cajanumero1" #cajanumero1> <br>
         <button (click)="generarTabla()">
-            Mostrar suma
+            Mostrar tabla
         </button>
     </form>
     <div>
-        <table>
+        <table border="1" *ngIf="numeros.length>0">
             <thead>
                 <tr>
                     <th >Operacion</th>
@@ -17,7 +17,7 @@
             </thead>
             <tbody>
                 <tr *ngFor="let number of numeros;let i=index">
-                    <td>{{cajaNumeroRef.nativeElement.value}} x {{i}}</td>
+                    <td>{{cajaNumeroRef.nativeElement.value}} x {{i+1}}</td>
                     <td>{{number}}</td>
                 </tr>
             </tbody>

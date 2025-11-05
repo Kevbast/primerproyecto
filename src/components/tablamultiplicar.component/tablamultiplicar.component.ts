@@ -11,13 +11,13 @@ export class TablamultiplicarComponent {
   public numeros:Array<number>
 
   constructor(){
-    this.numeros=[]
+    this.numeros=new Array<number>();
   }
 
   generarTabla():void{
     this.numeros=[];
     let num1=this.cajaNumeroRef.nativeElement.value;
-    for (let i = 0; i <=10; i++) {
+    for (let i = 1; i <=10; i++) {
       let result= num1*i
       this.numeros.push(result)
     }
